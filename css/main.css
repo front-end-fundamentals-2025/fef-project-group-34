@@ -128,13 +128,21 @@ img {
 
 
 /* second image home page*/
-/*.home2-container  {
-  width: 2800px;
-  flex-direction: column;
-  /* justify-content: center; 
-  grid-template-rows: auto auto 1fr auto;
- /*padding: 50px 20px;
-}*/
+.home2-grid {
+  display: flex;
+  grid-template-columns: repeat(3,1fr);
+  row-gap: 1rem;
+  column-gap: 0.5rem;
+  padding-top: 1rem;
+  
+}
+
+.home2-grid img {
+  width: 33%;
+  height: 100;
+  display: block;
+  
+}
 
  
 /*PRODUCT PAGE*/
