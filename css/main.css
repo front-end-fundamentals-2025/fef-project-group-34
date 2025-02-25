@@ -65,6 +65,22 @@ justify-content: end;
   width: 5%;
 }
 
+/* keyframe used to shrink logo*/
+ h1 {
+  width: 100px; 
+  transition: transform 3s ease-in-out;
+  animation: shrinkLogo 2s forwards;
+}
+
+@keyframes shrinkLogo {
+  from {
+      transform: scale(4.5); 
+  }
+  to {
+      transform: scale(1); 
+  }
+}
+
 /*footer*/
 footer {
   background-color: #020202;
@@ -174,7 +190,16 @@ font-weight: lighter;
   text-decoration: underline;
 }
 
+p{
+  text-align: center;
+}
 
+figcaption{
+  text-align: center;
+   transition: transform 0.3s ease-in-out;
+  margin:auto;
+  transform-origin: center;
+}
 /*Detailed product page one*/
 
 .product-one  {
@@ -182,7 +207,6 @@ font-weight: lighter;
   justify-content: center;
   border-bottom: 1px solid #000000;
 }
-
 
 /*SHOP BUTTON*/
 .add-cart{
@@ -194,15 +218,17 @@ font-weight: lighter;
   font-weight:medium;
   border-radius: 35px;
   cursor: pointer;
-  /* transition: background-color white 0.3 ease, transform 0.2s ease; */
+}
+
+/*Make the products bigger when you hover*/
+.specific-one img {
+  transition: transform 0.3s ease-in-out;
+  margin:auto;
+  transform-origin: center;
 
 }
 
+.specific-one img:hover {
+  transform: scale(1.3);
+}
 
-
-
-
-
-/* .productone-container {
-justify-content: center;
-} */
