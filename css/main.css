@@ -11,73 +11,52 @@ header {
   display: flex;
   padding-left: 0.5rem;
   align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
-.navbar {
+.navbar ul {
   display: flex;
   list-style: none;
-  padding-left: 0%;
-  margin: 0;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  
 }
 
-li {
+.navbar a {
   padding-left: 3rem;
-}
-
-a {
   font-weight: bold;
   text-decoration: none;
   color: black;
+  transition: 0.5s ease;
 }
-a:hover {
+
+.navbar li a:hover {
   color: #888;
 }
-.navbar ul li a {
-  transition: color 0.3s ease;
-}
 
-.navbar ul li a a:hover {
-  color: #b10000;
-}
-
-/* cart
-.cart{
-justify-content: end;
- display: flex;
- align-items: center;
-
- top: 2px;
- right:100px;
- width: 6em;
-
-} */
-
-.cart,
-.search {
-  display: flex;
-  align-items: center;
-}
-.cart img {
-  width: 10%;
-}
-
-.search img {
-  width: 5%;
+.navbar a:hover {
+  color: #888;
 }
 
 /* keyframe used to shrink logo*/
- h1 {
-  width: 100px; 
+h1 {
+  width: 100px;
   transition: transform 3s ease-in-out;
   animation: shrinkLogo 2s forwards;
 }
 
 @keyframes shrinkLogo {
   from {
-      transform: scale(4.5); 
+    transform: scale(1.2);
   }
   to {
-      transform: scale(1); 
+    transform: scale(1);
   }
 }
 
@@ -141,6 +120,7 @@ img {
   justify-content: center;
 }
 
+
 /* second image home page*/
 .home2-grid {
   display: flex;
@@ -177,58 +157,60 @@ img {
   width: 75%;
 }
 
-figcaption{
+figcaption {
   padding-bottom: 20px;
 }
 
-
-.price{
-font-weight: lighter;
+.price {
+  font-weight: lighter;
 }
 
-.shop-this{
+.shop-this {
   text-decoration: underline;
 }
 
-p{
+p {
   text-align: center;
 }
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
 
-figcaption{
+}
+figcaption {
   text-align: center;
-   transition: transform 0.3s ease-in-out;
-  margin:auto;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
   transform-origin: center;
 }
 /*Detailed product page one*/
 
-.product-one  {
+.product-one {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #000000;
 }
 
 /*SHOP BUTTON*/
-.add-cart{
+.add-cart {
   background-color: rgb(0, 0, 0);
   color: #ffffff;
   border: none;
   padding: 12px 40px;
   font-size: 16px;
-  font-weight:medium;
+  font-weight: medium;
   border-radius: 35px;
   cursor: pointer;
 }
 
 /*Make the products bigger when you hover*/
-.specific-one img {
+.eyewear img {
   transition: transform 0.3s ease-in-out;
-  margin:auto;
+  margin: auto;
   transform-origin: center;
-
 }
 
-.specific-one img:hover {
+.eyewear img:hover {
   transform: scale(1.3);
 }
-
