@@ -135,10 +135,7 @@ img {
   display: block;
 }
 
-.bw-container {
-  background-image: url(../img/black-white-pic_1.png);
-  background-repeat: no-repeat;
-  height: 100vh;
+.second-image{
   width: 100%;
   margin-top: 1rem;
 }
