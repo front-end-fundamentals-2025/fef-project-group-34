@@ -6,7 +6,9 @@
     <title>ZÃOL</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <script src="script.js" defer></script>
 </head>
+
 <header>
     <h1>ZÃOL</h1>
   <!-- menu on the page -->
@@ -14,7 +16,7 @@
         <div class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About </a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
@@ -26,15 +28,23 @@
                 </li>
                 <li>
                     <a href="cart.html">
-                        <span class="material-symbols-outlined">
-                            shopping_bag
+                        <!-- icon to open the cart -->
+                        <span 
+                        
+                            class="cart-icon" onclick="toggleCartMenu()">
+                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <span id="cart-count">0</span>
+                            
                         </span>
                     </a>
-                </li>
                     
+                </li>
+
+              
             </ul>
         </div>
     </nav>
+
       
 </header>
 <body>
@@ -47,6 +57,14 @@
         <div id="main-img">
             <img src="/img/home1.png" alt="Girl wearing futuristic glasses">
          </div>
+    </section>
+
+    <section class="bw-container">
+        <!-- <div class="bw-gallery">
+            <img src="img/black-white-pic.webp" alt="Girl wearing glasses, black and white picture.">
+
+        </div> -->
+
     </section>
 
     <section class="home2-container">
@@ -95,4 +113,5 @@
         
     </div>
     </footer>
+
 </html>

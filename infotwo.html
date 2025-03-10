@@ -6,6 +6,7 @@
     <title>ZÃOL</title>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js" defer></script>
 </head>
 <header>
     <h1>ZÃOL</h1>
@@ -14,7 +15,7 @@
         <div class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">About </a></li>
                 <li><a href="product.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
@@ -26,8 +27,13 @@
                 </li>
                 <li>
                     <a href="cart.html">
-                        <span class="material-symbols-outlined">
-                            shopping_bag
+                       <!-- icon to open the cart -->
+                        <span 
+                        
+                            class="cart-icon" onclick="toggleCartMenu()">
+                                <span class="material-symbols-outlined">shopping_bag</span>
+                                <span id="cart-count">0</span>
+                            
                         </span>
                     </a>
                 </li>
