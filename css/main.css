@@ -115,6 +115,29 @@ footer {
   margin: 0;
 }
 
+#home_button{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255) ;
+  border: transparent;
+  
+  
+  /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
+
+}
+
+a,button{
+cursor:pointer ;
+}
+
+
 img {
   width: 36%;
 }
@@ -124,25 +147,42 @@ img {
   justify-content: center;
 }
 
+.second-image{
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 /* second image home page*/
 .home2-grid {
   display: flex;
+  justify-content: center;
+  align-items: center;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 1rem;
-  column-gap: 0.5rem;
+  column-gap: 3rem;
   padding-top: 1rem;
 }
 
-.home2-grid img {
-  width: 33%;
-  height: 100;
-  display: block;
+#explore_text{
+  text-align: center;
+  margin-bottom: 2rem;
+  
 }
 
-.second-image{
-  width: 100%;
-  margin-top: 1rem;
+#explore_text:hover{
+  text-decoration: underline;
+  
 }
+
+
+.home2-grid img {
+  width: 29%;
+  height: 100;
+  display: block;
+  margin-bottom: 3rem;
+}
+
 
 /*PRODUCT PAGE*/
 /* Pictures on the product page*/
@@ -238,6 +278,111 @@ figcaption {
   flex: 1;
   overflow-x: auto;
 }
+
+/*CONTACT PAGE*/
+
+
+.background {
+  background-image: url(../img/contact_banner.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 700px;
+}
+
+.background {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 600px; 
+  margin: 0;
+}
+
+.wrapper {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  background: transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
+  z-index: 8;
+  color: white;
+}
+
+/* .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  z-index: 9;
+  text-align: left;
+  border-radius: 7px;
+}  */
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+form input,
+form textarea {
+  width: 80%; /* Adjust the width as needed */
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 10px;
+  font-size: 16px;
+  text-align: left; /* Keeps text inside input left-aligned */
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #d2c7c7;
+}
+
+label {
+  border-radius: 20px;
+}
+.send {
+  width: 20%; /* Adjust the width as needed */
+  padding: 5px;
+  margin-bottom: 16px;
+  border: 1px solid rgb(13, 13, 13);
+  border-radius: 15px;
+  font-size: 19px;
+  text-align: center;
+}
+
+form {
+  border-radius: 10px;
+}
+
+.send{
+ border: transparent;
+ font-weight: bold;
+ padding-left:15px;
+ padding-right: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7); 
+  font-style: italic; 
+}
+
+/* Left-align labels */
+form label {
+
+  text-align: left; 
+  width: 83%; 
+  margin: 5px 0; 
+  color: white; 
+  font-weight: bold; 
+}
+
+
 
 /*SHOP BUTTON*/
 .add-cart {
