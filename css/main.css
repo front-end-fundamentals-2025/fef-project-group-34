@@ -127,16 +127,11 @@ footer {
   font-size: 20px;
   background-color: rgb(255, 255, 255) ;
   border: transparent;
-  
-  
-  /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); */
-
 }
 
 a,button{
 cursor:pointer ;
 }
-
 
 img {
   width: 36%;
@@ -149,8 +144,8 @@ img {
 
 .second-image{
   width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 /* second image home page*/
@@ -164,24 +159,21 @@ img {
   padding-top: 1rem;
 }
 
-#explore_text{
-  text-align: center;
-  margin-bottom: 2rem;
-  
-}
-
-#explore_text:hover{
-  text-decoration: underline;
-  
-}
-
-
 .home2-grid img {
   width: 29%;
   height: 100;
   display: block;
   margin-bottom: 3rem;
 }
+
+#explore_text{
+  text-align: center;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  
+}
+
+
 
 
 /*PRODUCT PAGE*/
@@ -437,7 +429,6 @@ form label {
 #cart-menu {
   position: fixed;
   top: 0;
-
   width: 300px;
   height: 100vh;
   background: white;
@@ -596,4 +587,58 @@ form label {
   text-align: center;
   padding: 2rem;
   color: #666;
+}
+
+
+@media (max-width: 1024px){
+.navbar ul{
+  flex-direction: column;
+}
+/*Blue & Black photos*/
+.home2-grid{
+  column-gap: 0.2rem;
+  padding: 0.1rem;
+  
+}
+.home2-grid img{
+  width: 32%;
+}
+
+#home_button{
+position: absolute;
+top: 65%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 5px;
+padding-left: 30px;
+padding-right: 30px;
+font-weight: bold;
+font-size: 20px;
+background-color: rgb(255, 255, 255) ;
+border: transparent; 
+}
+}
+
+@media (max-width: 375px){
+  #home_button{
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+} 
+/*Main banner image*/
+#main-img {
+  display: flex;
+  justify-content: center; 
+}
+img{
+  width: 100%;
+}
+
+.second-image{
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+
 }
