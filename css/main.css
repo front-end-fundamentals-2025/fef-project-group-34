@@ -111,30 +111,32 @@ footer {
 
 /*HOME PAGE*/
 /* home page hero img*/
-.homepage{
+.homepage {
   margin: 0;
 }
 
-#home_button{
+#home_button {
   position: absolute;
   top: 85%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   padding: 5px;
   padding-left: 30px;
   padding-right: 30px;
   font-weight: bold;
   font-size: 20px;
-  background-color: rgb(255, 255, 255) ;
+  background-color: rgb(255, 255, 255);
   border: transparent;
 }
 
-a,button{
-cursor:pointer ;
+a,
+button {
+  cursor: pointer;
 }
 
 img {
-  width: 36%;
+  width: 100%;
+  height: 130%;
 }
 /* Center home hero img*/
 #main-img {
@@ -142,7 +144,7 @@ img {
   justify-content: center;
 }
 
-.second-image{
+.second-image {
   width: 100%;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -166,15 +168,11 @@ img {
   margin-bottom: 3rem;
 }
 
-#explore_text{
+#explore_text {
   text-align: center;
   margin-bottom: 3rem;
   text-decoration: underline;
-  
 }
-
-
-
 
 /*PRODUCT PAGE*/
 /* Pictures on the product page*/
@@ -273,7 +271,6 @@ figcaption {
 
 /*CONTACT PAGE*/
 
-
 .background {
   background-image: url(../img/contact_banner.webp);
   background-size: contain;
@@ -285,9 +282,9 @@ figcaption {
 
 .background {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  height: 600px; 
+  justify-content: center;
+  align-items: center;
+  height: 600px;
   margin: 0;
 }
 
@@ -318,7 +315,7 @@ form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 form input,
@@ -351,30 +348,27 @@ form {
   border-radius: 10px;
 }
 
-.send{
- border: transparent;
- font-weight: bold;
- padding-left:15px;
- padding-right: 15px;
+.send {
+  border: transparent;
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7); 
-  font-style: italic; 
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
 }
 
 /* Left-align labels */
 form label {
-
-  text-align: left; 
-  width: 83%; 
-  margin: 5px 0; 
-  color: white; 
-  font-weight: bold; 
+  text-align: left;
+  width: 83%;
+  margin: 5px 0;
+  color: white;
+  font-weight: bold;
 }
-
-
 
 /*SHOP BUTTON*/
 .add-cart {
@@ -501,14 +495,11 @@ form label {
   background: rgb(0, 0, 0);
 }
 
-
 .cart-page {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
-
-
 
 .cart-items {
   display: flex;
@@ -589,56 +580,52 @@ form label {
   color: #666;
 }
 
+@media (max-width: 1024px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+  /*Blue & Black photos*/
+  .home2-grid {
+    column-gap: 0.2rem;
+    padding: 0.1rem;
+  }
+  .home2-grid img {
+    width: 32%;
+  }
 
-@media (max-width: 1024px){
-.navbar ul{
-  flex-direction: column;
-}
-/*Blue & Black photos*/
-.home2-grid{
-  column-gap: 0.2rem;
-  padding: 0.1rem;
-  
-}
-.home2-grid img{
-  width: 32%;
-}
-
-#home_button{
-position: absolute;
-top: 65%;
-left: 50%;
-transform: translate(-50%,-50%);
-padding: 5px;
-padding-left: 30px;
-padding-right: 30px;
-font-weight: bold;
-font-size: 20px;
-background-color: rgb(255, 255, 255) ;
-border: transparent; 
-}
+  #home_button {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border: transparent;
+  }
 }
 
-@media (max-width: 375px){
-  #home_button{
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} 
-/*Main banner image*/
-#main-img {
-  display: flex;
-  justify-content: center; 
-}
-img{
-  width: 100%;
-}
+@media (max-width: 375px) {
+  #home_button {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*Main banner image*/
+  #main-img {
+    display: flex;
+    justify-content: center;
+  }
+  img {
+    width: 100%;
+  }
 
-.second-image{
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-
+  .second-image {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
 }
