@@ -104,7 +104,7 @@ footer {
 }
 
 .footer-bottom {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 14px;
   color: #ffffff;
 }
@@ -116,8 +116,8 @@ footer {
 }
 
 #home_button {
-  position: absolute;
-  top: 85%;
+  position: fixed;
+  top: 72vh;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 5px;
@@ -127,6 +127,10 @@ footer {
   font-size: 20px;
   background-color: rgb(255, 255, 255);
   border: transparent;
+}
+
+#home_button:hover {
+  color: #666;
 }
 
 a,
@@ -140,8 +144,10 @@ img {
 }
 /* Center home hero img*/
 #main-img {
-  display: flex;
-  justify-content: center;
+  background-image: url(../img/home4.png);
+  background-size: cover;
+  background-position: center;
+  height: 650px;
 }
 
 .second-image {
@@ -235,56 +241,72 @@ figcaption {
 }
 
 /*Product page*/
-#header_products img {
-  width: 100%;
-  height: auto;
-  display: flex;
-  border: 0;
+
+  #video_container{
+  width: 177vh; 
+  height: 700px;
+  overflow: hidden;
+}  
+
+#header_products {
+  background-image: url(../img/upclose.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
 }
 /* Detailed product page one*/
 .product-one {
-  display: flex;
-}
-
-.productone-container img {
-  width: 45%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* column-gap: 2rem; */
+  scrollbar-width: none;
+  
 }
 
 .productone-container {
   display: flex;
-  height: 40vw;
-  width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
+ 
 }
 
 .text-column {
   flex: 1;
-  padding: 20px;
-  padding-right: 0;
-  padding-left: 0%;
   text-align: center;
+  padding-top: 5rem; 
 }
 
 .product-one {
   flex: 1;
-  overflow-x: auto;
+  /* overflow-y: auto; */
 }
+
+/* reviews
+.review{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 20rem;
+  background-color: #888;
+
+}
+.review{
+  border: radius 20rem;
+  grid-column: 2;
+} */
+
 
 /*CONTACT PAGE*/
-
+/*contact banner*/
 .background {
   background-image: url(../img/contact_banner.webp);
-  background-size: contain;
+  background-size: fill;
   background-repeat: no-repeat;
   background-position: center;
-
-  height: 700px;
-}
-
-.background {
+  height: 730px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
   margin: 0;
 }
 
@@ -294,7 +316,7 @@ figcaption {
   height: 25rem;
   background: transparent;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   box-shadow: 0 0 30px rgb(0, 0, 0, 0.5);
   z-index: 8;
   color: white;
@@ -370,6 +392,7 @@ form label {
   font-weight: bold;
 }
 
+/*Product one info page*/
 /*SHOP BUTTON*/
 .add-cart {
   background-color: rgb(0, 0, 0);
@@ -381,6 +404,7 @@ form label {
   border-radius: 35px;
   cursor: pointer;
 }
+
 
 /*Quantity Button*/
 .quantity-selector {
@@ -580,11 +604,36 @@ form label {
   color: #666;
 }
 
-@media (max-width: 1024px) {
-  .navbar ul {
-    flex-direction: column;
+@media screen and (max-width: 1280px) {
+  #home_button {
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  /*Blue & Black photos*/
+}
+
+@media screen and (max-width: 1087px) {
+  #home_button {
+    top: 72%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    display: flex;
+
+    margin-bottom: 0;
+  }
+
+  /*Home page Blue & Black photos*/
   .home2-grid {
     column-gap: 0.2rem;
     padding: 0.1rem;
@@ -592,21 +641,109 @@ form label {
   .home2-grid img {
     width: 32%;
   }
-
   #home_button {
     position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /*Banner product page*/
+  #header_products {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+  }
+
+  .product-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+    
+  }
+  
+  .productone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+   
+  }
+  
+  .text-column {
+    padding-top: 6rem; 
+    padding-bottom: 5rem;
+  }
+
+  .text-column h2,p{
+    font-size: small;
+  }
+  
+  .product-one {
+     overflow-y: auto; 
+  }
+}
+
+@media screen and (max-width: 912px){
+  #home_button {
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width:540px) {
+  #home_button {
     top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    border: transparent;
+  }
+   /*Main banner image*/
+   #main-img {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 405px;
+  }
+  img {
+    width: 100%;
   }
 }
+
+
+@media screen and (max-width: 430px) {
+  #home_button {
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*Product Page grid*/
+  .eyewear-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    padding: 10px;
+    padding-top: 30px;
+  }
+  /*Contact Page image*/
+  .background {
+    background-image: url(../img/contact_banner2.jpg);
+    background-size: fill;
+    height: 540px;
+  }
+}
+
+@media screen and (max-width: 414px){
+  #home_button {
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  
+}
+
 
 @media (max-width: 375px) {
   #home_button {
@@ -618,14 +755,25 @@ form label {
   #main-img {
     display: flex;
     justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 505px;
   }
   img {
     width: 100%;
   }
 
+  /*Second home page image*/
   .second-image {
     width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 344px) {
+  #home_button {
+    top: 62%;
+    left: 50%;
   }
 }

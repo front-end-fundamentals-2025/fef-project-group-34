@@ -1,206 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZÃOL</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <script src="script.js" defer></script>
-</head>
-<header>
+  </head>
+  <header>
     <h1>ZÃOL</h1>
-  <!-- menu on the page -->
+    <!-- menu on the page -->
     <nav>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="cart.html">
-                        <!-- icon to open the cart -->
-                        <span 
-                        
-                            class="cart-icon" onclick="toggleCartMenu()">
-                                <span class="material-symbols-outlined">shopping_bag</span>
-                                <span id="cart-count">0</span>
-                            
-                        </span>
-                    </a>
-                </li>
-                    
-            </ul>
-        </div>
-    </nav>
-      
-</header>
-
-    
-<body class="homepage">
-    <main>
-        <div id="header_products">
-            <img src="img/upclose.png" alt="">
-        </div>
-
-        <!-- pictures of the products on the page -->
-        <section class="eyewear-container">
-            <a href="infoone.html">
-                <figure class="eyewear">
-                    <div class="specific-one">
-                        <img class="eyewear-gallery" src="img/eye1.png" alt="eyewear1">
-                <!-- <img class="eyewear-gallery2" src="img/eyeone.2.webp"> -->
-                    </div>
-                    <figcaption><h3>Lumière</h3></figcaption>
-                    <p class="price"> 3400 SEK</p>
-                    <p class="shop-this">SHOP THIS</p>
-                </figure>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="#">
+              <span class="material-symbols-outlined"> search </span>
             </a>
-           
+          </li>
+          <li>
+            <a href="cart.html">
+              <!-- icon to open the cart -->
+              <span class="cart-icon" onclick="toggleCartMenu()">
+                <span class="material-symbols-outlined">shopping_bag</span>
+                <span id="cart-count">0</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-      <a href="infotwo.html">
+  <body class="homepage">
+    <main>
+      <div id="header_products"> 
+      <!-- <div id="video_container">
+        <div id="header_products"> 
+          <video autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>  -->
+    </div>
+
+      <!-- pictures of the products on the page -->
+      <section class="eyewear-container">
+        <a href="infoone.html">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye2.png" alt="eyewear2">
-              <figcaption><h3>Élan </h3></figcaption>
-              <p class="price"> 4400 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <div class="specific-one">
+              <img class="eyewear-gallery" src="img/eye1.png" alt="eyewear1" />
+              <!-- <img class="eyewear-gallery2" src="img/eyeone.2.webp"> -->
+            </div>
+            <figcaption><h3>Lumière</h3></figcaption>
+            <p class="price">3400 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="infotwo.html">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye3.png" alt="eyewear3">
-              <figcaption><h3>Aurum</h3></figcaption>
-              <p class="price"> 5400 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye2.png" alt="eyewear2" />
+            <figcaption><h3>Élan</h3></figcaption>
+            <p class="price">4400 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye4.png" alt="eyewear4">
-              <figcaption>Opulence</figcaption>
-              <p class="price"> 3000 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye3.png" alt="eyewear3" />
+            <figcaption><h3>Aurum</h3></figcaption>
+            <p class="price">5400 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye5.png" alt="eyewear5">
-              <figcaption>Noir Luxe</figcaption>
-              <p class="price"> 7000 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye4.png" alt="eyewear4" />
+            <figcaption>Opulence</figcaption>
+            <p class="price">3000 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye6.png" alt="eyewear6">
-              <figcaption>Vérité</figcaption>
-              <p class="price"> 4400 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye5.png" alt="eyewear5" />
+            <figcaption>Noir Luxe</figcaption>
+            <p class="price">7000 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye7.png" alt="eyewear7">
-              <figcaption>Celeste</figcaption>
-              <p class="price"> 2700 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye6.png" alt="eyewear6" />
+            <figcaption>Vérité</figcaption>
+            <p class="price">4400 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye8.png" alt="eyewear8">
-              <figcaption>Prestige</figcaption>
-              <p class="price"> 3000 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye7.png" alt="eyewear7" />
+            <figcaption>Celeste</figcaption>
+            <p class="price">2700 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye9.png" alt="eyewear9">
-              <figcaption>Astor</figcaption>
-              <p class="price"> 5400 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye8.png" alt="eyewear8" />
+            <figcaption>Prestige</figcaption>
+            <p class="price">3000 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
+        </a>
+
+        <a href="#">
           <figure class="eyewear">
-              <img class="eyewear-gallery" src="img/eye10.png" alt="eyewear10">
-              <figcaption>Soleil</figcaption>
-              <p class="price"> 2500 SEK</p>
-              <p class="shop-this">SHOP THIS</p>
+            <img class="eyewear-gallery" src="img/eye9.png" alt="eyewear9" />
+            <figcaption>Astor</figcaption>
+            <p class="price">5400 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
           </figure>
-      </a>
-  
-      <a href="#">
-        <figure class="eyewear">
-            <img class="eyewear-gallery" src="img/eye11.png" alt="eyewear11">
+        </a>
+
+        <a href="#">
+          <figure class="eyewear">
+            <img class="eyewear-gallery" src="img/eye10.png" alt="eyewear10" />
+            <figcaption>Soleil</figcaption>
+            <p class="price">2500 SEK</p>
+            <p class="shop-this">SHOP THIS</p>
+          </figure>
+        </a>
+
+        <a href="#">
+          <figure class="eyewear">
+            <img class="eyewear-gallery" src="img/eye11.png" alt="eyewear11" />
             <figcaption>Sienna</figcaption>
-            <p class="price"> 1500 SEK</p>
+            <p class="price">1500 SEK</p>
             <p class="shop-this">SHOP THIS</p>
-        </figure>
-    </a>
+          </figure>
+        </a>
 
-    <a href="#">
-        <figure class="eyewear">
-            <img class="eyewear-gallery" src="img/eye12.png" alt="eyewear12">
+        <a href="#">
+          <figure class="eyewear">
+            <img class="eyewear-gallery" src="img/eye12.png" alt="eyewear12" />
             <figcaption>Luna</figcaption>
-            <p class="price"> 3500 SEK</p>
+            <p class="price">3500 SEK</p>
             <p class="shop-this">SHOP THIS</p>
-        </figure>
-    </a>
-  
-  
-        </section>  
-  
-      </main>
-    
-</body>
-<footer>
+          </figure>
+        </a>
+      </section>
+    </main>
+  </body>
+  <footer>
     <!-- footer section -->
 
-    <div class="footer-container">
+    <section class="footer-container">
+      <div class="footer-section">
+        <h4>About us</h4>
+        <p>
+          At ZAOL, we craft eyewear that embodies sophistication, innovation,
+          <br />
+          and timeless elegance. Meticulously designed and expertly handcrafted,
+          <br />
+          our frames blend cutting-edge fashion with premium materials <br />
+          to offer unparalleled style and comfort. More than an accessory,
+          <br />ZAOL eyewear is a statement—where artistry meets vision.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
         <div class="footer-section">
-            <h4>About us</h4>
-            <p>At ZAOL, we craft eyewear that embodies sophistication, innovation, <br> and timeless elegance.  Meticulously designed and expertly handcrafted, <br> our frames blend cutting-edge fashion with premium materials <br> to offer unparalleled style and comfort. More than an accessory, <br>ZAOL eyewear is a statement—where artistry meets vision.</p>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
         </div>
-        <div class="footer-section">
-            <h4>Customer Service</h4>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Returns</a></li>
-            </ul>
-        <div class="footer-section">
-            <h4> Follow Us</h4>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-            
-        </div>
-
-        </div>
-
-    </div>
-    <div class="footer-bottom">
-        <p>©ZÃOL 2025</p>
-        
-    </div>
-    </footer>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <p>©ZÃOL 2025</p>
+    </section>
+  </footer>
 </html>
