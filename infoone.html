@@ -1,136 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZÃOL</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <script src="script.js" defer></script>
-</head>
-<header>
-    <h1>ZÃOL</h1>
-  <!-- menu on the page -->
-    <nav>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </a>
-                </li>
-                        
-                 <li>
-                        <a href="cart.html">
-                            <!-- icon to open the cart -->
-                            <span 
-                            
-                                class="cart-icon" onclick="toggleCartMenu()">
-                                    <span class="material-symbols-outlined">shopping_bag</span>
-                                    <span id="cart-count">0</span>
-                                
-                            </span>
-                        </a>
-                        
-                    </li>
-                        </span>
-                    </a>
-                </li>
-                    
-            </ul>
+  </head>
+  <body class="homepage">
+    <!-- Header Section -->
+    <header>
+      <h1>ZÃOL</h1>
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Search & Cart Icons -->
+        <div class="icons">
+          <a href="#">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+          <a href="cart.html">
+            <span class="cart-icon" onclick="toggleCartMenu()">
+              <span class="material-symbols-outlined">shopping_bag</span>
+              <span id="cart-count">0</span>
+            </span>
+          </a>
+          <!-- Hamburger Menu -->
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-    </nav>
-      
- 
+      </nav>
+    </header>
 
+    <!-- Main Content -->
+    <main>
+      <!-- Product Section -->
+      <section class="productone-container">
+        <div class="product-one">
+          <img src="img/eye1.png" alt="Eyewear 1" />
+          <img src="img/eyeone.2.webp" alt="Woman wearing black sunglasses from the side" />
+          <img src="img/eye1_woman .webp" alt="Woman wearing black sunglasses" />
+          <img src="img/eye1_side.webp" alt="Eyewear 1 from the side" />
+        </div>
 
+        <!-- Product Description -->
+        <div class="text-column">
+          <h3>Lumière</h3>
+          <p>3400 sek</p>
+          <h4>Product Description</h4>
+          <p>
+            Crafted for those who demand sophistication,<br />
+            these aviator frames blend ultra-light titanium <br />
+            with 24K gold accents. Precision-engineered <br />
+            lenses offer unparalleled clarity and UV protection,<br />
+            ensuring both luxury and function. Elevate your <br />
+            vision with timeless elegance.
+          </p>
 
-</header>
-<body class="homepage">
-<section class="productone-container">
-    <div class="product-one">
-        <img src="img/eye1.png" alt="eyewear1">
-        <img src="img/eyeone.2.webp" alt="woman wearing black sun glasses from the side">
-        <img src="img/eye1_woman .webp" alt="woman wearing black sun glasses">
-        <img src="img/eye1_side.webp" alt="eyewear1 from the side ">
-       
-        
-    </div>
+          <!-- Add to Cart Button -->
+          <a href="cart.html">
+            <button
+              class="add-cart"
+              data-id="1"
+              data-name="Lumière"
+              data-price="3400"
+              data-image="img/eye1.png"
+            >
+              ADD TO SHOPPING BAG
+            </button>
+          </a>
 
-<div class="text-column">
-    <h3>Lumière</h3>
-    <p> 3400 sek</p> 
-    <h4>Product description</h4>
-    <p>Crafted for those who demand sophistication,<br>these aviator frames blend ultra-light titanium <br>with 24K gold accents. Precision-engineered <br>lenses offer unparalleled clarity and UV protection,<br> ensuring both luxury and function. Elevate your <br> vision with timeless elegance.</p>   
-    
-    <a href="cart.html"><button class="add-cart"
-    data-id="1"
-    data-name="Lumière"
-    data-price="3400"
-    data-image="img/eye1.png"
-    > ADD TO SHOPPING BAG</button></a>
+          <!-- Quantity Selector -->
+          <div class="quantity-selector">
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-control">
+              <input type="number" id="quantity" name="quantity" value="1" min="1" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<div class="quantity-selector">
-    <label for="quantity">Quantity:</label>
-    <div class="quantity-control">
-    
-        <input type="number" id="quantity" name="quantity" value="1" min="1">
-       
-</div>
-</div> 
-</section>
-<!-- <section id="reviews">
-<h3>Reviews</h3>
-<div class="review">
-    <p class="text-review">"Great quality and an elegant design"</p>
-    <p class="text-writer">-Saara Hussein</p>
-</div>
-<div class="review">
-    <p class="text-review">"LOVE THEM!</p>
-    <p class="text-writer">-Morayo Alimi</p>
-</div>
-<div class="review">
-    <p class="text-review">"Pricey but totally worth it!"</p>
-    <p class="text-writer">-Maima Bouzidi</p>
-</div>
-</section> -->
-
-
-</body>
-<!-- footer section -->
-<footer>
-    <section class="footer-container">
+    <!-- Footer Section -->
+    <footer>
+      <section class="footer-container">
         <div class="footer-section">
-            <h4>About us</h4>
-            <p>At ZAOL, we craft eyewear that embodies sophistication, innovation, <br> and timeless elegance.  Meticulously designed and expertly handcrafted, <br> our frames blend cutting-edge fashion with premium materials <br> to offer unparalleled style and comfort. More than an accessory, <br>ZAOL eyewear is a statement—where artistry meets vision.</p>
+          <h4>About Us</h4>
+          <p>
+            At ZAOL, we craft eyewear that embodies sophistication, innovation, <br />
+            and timeless elegance. Meticulously designed and expertly handcrafted, <br />
+            our frames blend cutting-edge fashion with premium materials <br />
+            to offer unparalleled style and comfort. More than an accessory, <br />
+            ZAOL eyewear is a statement—where artistry meets vision.
+          </p>
         </div>
         <div class="footer-section">
-            <h4>Customer Service</h4>
-            <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Shipping</a></li>
-                <li><a href="#">Returns</a></li>
-            </ul>
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
         <div class="footer-section">
-            <h4> Follow Us</h4>
-            <ul>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-            </ul>
-            
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+          </ul>
         </div>
-
-        </div>
-
-    </section>
-    <section class="footer-bottom">
-        <p>©ZÃOL 2025</p>     
-    </section>
+      </section>
+      <section class="footer-bottom">
+        <p>©ZÃOL 2025</p>
+      </section>
     </footer>
+  </body>
 </html>

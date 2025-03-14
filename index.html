@@ -7,110 +7,107 @@
     <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <script src="script.js" defer></script>
   </head>
-
-  <header>
-    <h1>ZÃOL</h1>
-    <!-- menu on the page -->
-    <nav>
-      <div class="navbar">
-        <ul>
+  <body class="homepage">
+    <!-- Header Section -->
+    <header>
+      <h1>ZÃOL</h1>
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="myLinks">
           <li><a href="#">Home</a></li>
           <li><a href="product.html">Products</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li>
-            <a href="#">
-              <span class="material-symbols-outlined"> search </span>
-            </a>
-          </li>
-          <li>
-            <a href="cart.html">
-              <!-- icon to open the cart -->
-              <span class="cart-icon" onclick="toggleCartMenu()">
-                <span class="material-symbols-outlined">shopping_bag</span>
-                <span id="cart-count">0</span>
-              </span>
-            </a>
-          </li>
         </ul>
-      </div>
-    </nav>
-  </header>
+        <!-- Search & Cart Icons -->
+        <div class="icons">
+          <a href="#">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+          <a href="cart.html">
+            <span class="cart-icon" onclick="toggleCartMenu()">
+              <span class="material-symbols-outlined">shopping_bag</span>
+              <span id="cart-count">0</span>
+            </span>
+          </a>
+          <!-- Hamburger Menu -->
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-  <!-- homepage pictures  -->
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-main">
+        <div id="main-img"></div>
+      </section>
 
-  <body class="homepage">
-    <section class="hero-main">
-      <div id="main-img">
-        <a href="product.html">
-          <button id="home_button">Shop now</button>
-        </a>
-      </div>
-    </section>
+      <!-- Black & White Gallery Section -->
+      <section class="bw-container">
+        <h2 class="visually-hidden"></h2>
+        <div class="bw-gallery">
+          <img
+            src="img/black-white-pic_1.png"
+            alt="Girl wearing glasses, black and white picture."
+          />
+        </div>
+      </section>
 
-    <section class="bw-container">
-      <div class="bw-gallery">
-        <img
-          src="img/black-white-pic_1.png"
-          class="second-image"
-          alt="Girl wearing glasses, black and white picture."
-        />
-      </div>
-    </section>
+      <!-- Explore Collection Section -->
+      <section class="home2-container">
+        <div id="explore_text">
+          <a href="product.html">
+            <h2>EXPLORE THE COLLECTION</h2>
+          </a>
+        </div>
+        <div class="home2-grid">
+          <img src="/img/blue_glasses_left.png" alt="Blue girl wearing sunglasses" />
+          <img src="/img/b&w_glasses.png" alt="B&W photo of woman wearing glasses" />
+          <img src="/img/blue_glasses_left.png" alt="Blue photo of girl wearing sunglasses" />
+        </div>
+      </section>
 
-    <section class="home2-container">
-      <div id="explore_text">
-        <a href="product.html">
-          <h2>EXPLORE THE COLLECTION</h2>
-        </a>
-      </div>
-      <div class="home2-grid">
-        <img
-          src="/img/blue_glasses_left.png"
-          alt=" Blue girl wearing sun glasses "
-        />
-        <img
-          src="/img/b&w_glasses.png"
-          alt="B&W photo of woman wearing glasses"
-        />
-        <img
-          src="/img/blue_glasses_left.png"
-          alt="Blue photo of girl wearing sun glasses"
-        />
-      </div>
-    </section>
-    <!-- <section id="video_container">
-          <video autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>  
-    </section> -->
-  </body>
-  <!-- footer section -->
-  <footer>
-    <section class="footer-container">
-      <div class="footer-section">
-        <h4>About us</h4>
-        <p>
-          At ZAOL, we craft eyewear that embodies sophistication, innovation,
-          <br />
-          and timeless elegance. Meticulously designed and expertly handcrafted,
-          <br />
-          our frames blend cutting-edge fashion with premium materials <br />
-          to offer unparalleled style and comfort. More than an accessory,
-          <br />ZAOL eyewear is a statement—where artistry meets vision.
-        </p>
-      </div>
-      <div class="footer-section">
-        <h4>Customer Service</h4>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Shipping</a></li>
-          <li><a href="#">Returns</a></li>
-        </ul>
+      <!-- Video Section -->
+      <section id="video_container">
+        <video autoplay muted loop id="video-bg">
+          <source src="img/video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p>
+            At ZAOL, we craft eyewear that embodies sophistication, innovation,
+            and timeless elegance. Meticulously designed and expertly handcrafted,
+            our frames blend cutting-edge fashion with premium materials
+            to offer unparalleled style and comfort. More than an accessory,
+            ZAOL eyewear is a statement—where artistry meets vision.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </div>
         <div class="footer-section">
           <h4>Follow Us</h4>
           <ul>
@@ -120,9 +117,9 @@
           </ul>
         </div>
       </div>
-    </section>
-    <section class="footer-bottom">
-      <p>©ZÃOL 2025</p>
-    </section>
-  </footer>
+      <div class="footer-bottom">
+        <p>©ZÃOL 2025</p>
+      </div>
+    </footer>
+  </body>
 </html>

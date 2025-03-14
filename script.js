@@ -1,6 +1,6 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Function to save cart to localStorage
+// function to save cart to localStorage
 function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCount();
@@ -13,7 +13,7 @@ function updateCartCount() {
     }
 }
 
-// Function to add an item to the cart
+// function to add an item to the cart
 function addToCart(button) {
     const productData = button.dataset;
     const quantityInput = document.getElementById("quantity");
@@ -30,10 +30,10 @@ function addToCart(button) {
     const existingItemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
 
     if (existingItemIndex > -1) {
-        // Update quantity if item exists
+        // update quantity if item exists
         cart[existingItemIndex].quantity += quantity;
     } else {
-        // Add new item if it doesn't exist
+        // add new item if it doesn't exist
         cart.push(item);
     }
 
@@ -70,7 +70,7 @@ function displayCart() {
     }
 
     let total = 0;
-
+// help from our classmate samuel with some parts
     cart.forEach((item, index) => {
         total += item.price * item.quantity;
         
@@ -126,3 +126,14 @@ document.addEventListener("DOMContentLoaded", function() {
         displayCart();
     }
 });
+// hamburger menu code adapted from w3school 
+function toggleMenu() {
+    const navLinks = document.getElementById("myLinks");
+    if (navLinks.style.display === "block") {
+      navLinks.style.display = "none";
+    } else {
+      navLinks.style.display = "block";
+    }
+  }
+
+

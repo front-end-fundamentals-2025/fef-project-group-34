@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZÃOL</title>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <script src="script.js" defer></script>
-</head>
-<header>
-    <h1>ZÃOL</h1>
-  <!-- menu on the page -->
-    <nav>
-        <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About </a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <a href="#">
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="cart.html">
-                        <!-- icon to open the cart -->
-                        <span 
-                        
-                            class="cart-icon" onclick="toggleCartMenu()">
-                                <span class="material-symbols-outlined">shopping_bag</span>
-                                <span id="cart-count">0</span>
-                            
-                        </span>
-                    </a>
-                    
-                </li>
-                    
-            </ul>
+  </head>
+  <body class="homepage">
+    <!-- Header Section -->
+    <header>
+      <h1>ZÃOL</h1>
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="myLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!-- Search & Cart Icons -->
+        <div class="icons">
+          <a href="#">
+            <span class="material-symbols-outlined">search</span>
+          </a>
+          <a href="cart.html">
+            <span class="cart-icon" onclick="toggleCartMenu()">
+              <span class="material-symbols-outlined">shopping_bag</span>
+              <span id="cart-count">0</span>
+            </span>
+          </a>
+          <!-- Hamburger Menu -->
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-    </nav>
-      
-</header>
-<!-- homepage pictures  -->
-<body class="homepage">
+      </nav>
+    </header>
+
+    <!-- Main Content -->
     <main class="cart-page">
-        <div class="cart-items">
-        </div>
+      <div class="cart-items"></div>
     </main>
 
-</body>
-<footer>
-<p>©ZÃOL 2025</p>
-</footer>
+    <!-- Footer Section -->
+    <footer>
+      <section class="footer-bottom">
+        <p>©ZÃOL 2025</p>
+      </section>
+    </footer>
+  </body>
 </html>
